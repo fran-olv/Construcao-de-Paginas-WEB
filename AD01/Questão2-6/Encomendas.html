@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>DOReMI SOlFÁ Móveis - Encomendas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img class="imgLogo" src="../Imagens/DoremisofaLogoTopo.png" alt="DOReMI SOlFÁ Móveis">
+    <address class="ender">
+        Tv. La Donna e Mobile, 134<br>
+        Tel: (21) 91224-4881<br>
+        <a href="mailto:contato@doremisolfa.com.br">contato@doremisolfa.com.br</a>
+    </address>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="DoremisolfaMoveis.html" target="_blank">Apresentação</a></li>
+        <li><a href="Doremi.html" target="_blank">Camas</a></li>
+        <li><a href="Solfa.html" target="_blank">Sofás</a></li>
+        <li><a href="Encomendas.html" target="_blank">Encomendas</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h1 class="titulo">Encomendas</h1>
+
+    <form class="FormBox" name="formEncomendas" action="#" method="post">
+
+        <fieldset class="FSLinhaInteira">
+            <legend>Identificação</legend>
+
+            <div class="LinhaForm">
+                <div id="loginCad" class="ColEsq">
+                    <label class="LabBox" for="idEmail">E-mail:</label>
+                    <input id="idEmail" name="idEmail" type="email" class="InpBoxGnd">
+                </div>
+                <div id="senhaCad" class="ColDir">
+                    <label class="LabBox" for="senhaCadInput">Senha:</label>
+                    <input id="senhaCadInput" name="senhaCad" type="password" class="InpBoxMed">
+                </div>
+            </div>
+
+            <p><em>Se você ainda não tem cadastro clique <a href="Cadastro.html">aqui</a>!</em></p>
+        </fieldset>
+
+        <fieldset class="FSLinhaInteira">
+            <legend>Lista de Compras</legend>
+
+            <div class="LinhaForm">
+                <div id="lisSelProd" class="ColEsq">
+                    <label class="LabBox" for="selProduto">Produtos:</label>
+                    <select id="selProduto" name="selProduto">
+                        <option value="">-----</option>
+                        <optgroup label="Cama Solteiro">
+                            <option value="camaSolteiroSimples">Simples 104 x 104 x 202</option>
+                            <option value="camaSolteiroBicama">Bicama 70 x 87 x 193</option>
+                        </optgroup>
+                        <optgroup label="Cama Casal">
+                            <option value="camaCasalSimples">Simples 108 x 154 x 210</option>
+                            <option value="camaCasalGavetas">Com gavetas 48 x 145 x 195</option>
+                        </optgroup>
+                        <optgroup label="Sofá 2 lug.">
+                            <option value="sofa2Retratil">Retrátil 95 x 87-126 x 180 Linho Cru</option>
+                            <option value="sofa2Cama">Sofá-cama 95 x 97-150 x 180 Linho</option>
+                        </optgroup>
+                        <optgroup label="Sofá 3 lug.">
+                            <option value="sofa3Retratil">Retrátil 108 x 95-155 x 200 Suede</option>
+                            <option value="sofa3Retro">Retrô 80 x 76 x 196 Veludo</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div id="btnIncluir" class="ColDir">
+                    <input type="button" name="btnIncluir" value="Incluir">
+                </div>
+            </div>
+
+            <div id="boxPedidos" class="LinhaForm">
+                <textarea id="lisPedArea" name="lisPedArea" readonly></textarea>
+            </div>
+
+            <div class="LinhaForm">
+                <div class="ColDir">
+                    <label class="LabBox" for="valorPedido">Valor: R$</label>
+                    <input id="valorPedido" name="valorPedido" type="text" class="InpBoxMed" readonly>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="FSLinhaInteira">
+            <legend>Dados do Cartão</legend>
+
+            <div id="numCartao" class="ColEsq">
+                <label class="LabBox" for="cartaoNum1">Número:</label>
+                <input id="cartaoNum1" name="cartaoNum1" type="number" class="numQD"><input id="cartaoNum2" name="cartaoNum2" type="number" class="numQD"><input id="cartaoNum3" name="cartaoNum3" type="number" class="numQD"><input id="cartaoNum4" name="cartaoNum4" type="number" class="numQD">
+            </div>
+
+            <div id="valCartao" class="ColEsq">
+                <label class="LabBox" for="validadeMes">Validade:</label>
+                <input id="validadeMes" name="validadeMes" type="number" class="numDD" value="8">
+                /
+                <input id="validadeAno" name="validadeAno" type="number" class="numQD" value="2026">
+            </div>
+
+            <div id="boxParcel" class="ColEsq">
+                <label class="LabBox" for="parcelas">Parcelas:</label>
+                <input id="parcelas" name="parcelas" type="number" class="numDD" value="1">
+                x Sem Juros
+            </div>
+
+            <fieldset id="fsBandeira" class="FSColDir">
+                <legend>Bandeira:</legend>
+                <label><input type="radio" name="bandeira" value="visa" checked> Visa</label><br>
+                <label><input type="radio" name="bandeira" value="master"> Master</label><br>
+                <label><input type="radio" name="bandeira" value="elo"> Elo</label>
+            </fieldset>
+        </fieldset>
+
+        <div class="botoes">
+            <input type="submit" name="btnConfirmar" value="Confirmar">
+            <input type="reset" name="btnLimpar" value="Limpar">
+        </div>
+
+    </form>
+</section>
+
+</body>
+</html>
